@@ -1,0 +1,13 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="c" class="bean.Car" dependency-check="objects">
+	<!-- no need to call secondary setter methods -->
+	<property name="engine" ref="e"/>
+	</bean>
+	<bean id="e" class="bean.Engine" dependency-check="simple">
+	<property name="modelYear" value="2017"/>
+	</bean>
+	
+</beans>
+		  

@@ -1,0 +1,11 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="t" class="bean.Test">
+	<constructor-arg value="venkat"/>
+	<constructor-arg value="23"/>
+	<constructor-arg value="venkat@gmail.com"/>
+	</bean>
+</beans>
+		  

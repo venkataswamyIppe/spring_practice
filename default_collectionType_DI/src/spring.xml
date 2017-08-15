@@ -1,0 +1,32 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="t" class="bean.Test">
+		<property name="fruits">
+			<list>
+				<value>Apple</value>
+				<value>Mango</value>
+				<value>Banana</value>
+				<value>Lemon</value>
+				<value>Apple</value>
+			</list>
+		</property>
+		<property name="criketers">
+			<set>
+				<value>Sachin</value>
+				<value>Dhoni</value>
+				<value>Kohli</value>
+				<value>Sachin</value>
+				<value>Raina</value>
+			</set>
+		</property>
+		<property name="countrysCapitals">
+			<map>
+			<entry key="India" value="Delhi"/>
+			<entry key="Frans" value="Paries"/>
+			<entry key="Pak" value="Islam"/>
+			</map>
+		</property>
+	</bean>
+</beans>
+		  

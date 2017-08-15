@@ -1,0 +1,12 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!-- truck implementation lookup method -->
+<beans>
+	<bean id="t" class="bean.Truck">
+	<lookup-method name="myTruckEngine" bean="e"/>
+	</bean>
+	<bean id="e" class="bean.Engine">
+	<property name="engineName" value="BenzTruck"/>
+	</bean>
+</beans>
+		  

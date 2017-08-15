@@ -1,0 +1,12 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!-- car implementation lookup method -->
+<beans>
+	<bean id="c" class="bean.Car">
+	<lookup-method name="myCarEngine" bean="e"/>
+	</bean>
+	<bean id="e" class="bean.Engine">
+	<property name="engineName" value="swiftEngine"/>
+	</bean>
+</beans>
+		  

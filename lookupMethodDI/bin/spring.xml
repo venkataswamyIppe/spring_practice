@@ -1,0 +1,10 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!-- bus implementation lookup method -->
+<beans>
+	<bean id="ticketVendingMachine" class="bean.TicketVendingMachine">
+	<lookup-method name="generateTicket" bean="ticket"/>
+	</bean>
+	<bean id="ticket" class="bean.Ticket" scope="prototype" />
+</beans>
+		  

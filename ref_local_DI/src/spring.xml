@@ -1,0 +1,20 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="sb" class="bean.SampleBean">
+		<property name="db">
+			<ref local="db" />
+		</property>
+	</bean>
+
+	<bean id="eb" class="bean.ExampleBean">
+		<property name="db">
+			<ref local="db" />
+		</property>
+	</bean>
+
+	<bean id="db" class="bean.DemoBean" />
+
+</beans>
+		  

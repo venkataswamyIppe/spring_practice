@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	<context:annotation-config />
+	<!-- Definition for Product bean -->
+	<bean id="product" class="bean.Product">
+		<property name="name" value="ProductA" />
+		<property name="price" value="4000" />
+	</bean>
+	<bean id="type" class="bean.Type">
+		<property name="type" value="Export" />
+	</bean>
+</beans>

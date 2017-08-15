@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="t" class="bean.Test">
+		<property name="fruits">
+			<util:list list-class="java.util.Vector">
+				<value>Apple</value>
+				<value>Mango</value>
+				<value>Banana</value>
+				<value>Lemon</value>
+				<value>Apple</value>
+			</util:list>
+		</property>
+		<property name="criketers">
+			<util:set set-class="java.util.TreeSet">
+				<value>Sachin</value>
+				<value>Dhoni</value>
+				<value>Kohli</value>
+				<value>Sachin</value>
+				<value>Raina</value>
+			</util:set>
+		</property>
+		<property name="countrysCapitals">
+			<util:map map-class="java.util.Hashtable">
+				<entry key="India" value="Delhi" />
+				<entry key="Frans" value="Paries" />
+				<entry key="Pak" value="Islam" />
+			</util:map>
+		</property>
+	</bean>
+</beans>
+		  
